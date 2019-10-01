@@ -16,7 +16,17 @@ Dalam beberapa kasus, seluruh proses bisnis perusahaan outsourcing dapat menerap
 * BPaaS harus dapat mendukung banyak bahasa dan beberapa lingkungan penerapan karena bisnis tidak dapat memprediksi bagaimana proses   bisnis akan dimanfaatkan di masa depan.  
 * Lingkungan BPaaS harus bisa menangani skala besar. Layanan harus bisa pergi dari pengelolaan beberapa proses untuk beberapa pelanggan untuk dapat mendukung ratusan bahkan ribuan pelanggan dan proses. Layanan ini mencapai tujuan tersebut dengan mengoptimalkan layanan awan yang mendasari untuk mendukung jenis elastisitas dan penskalaan ini.  
 
+**CONTOH**  
+*Diskripsi*  
+gtHR adalah software yang memberikan kemudahan dalam pengelolaan data karyawan, pencatatan proses mutasi, penilaian kerja, penyederhanaan pengelolaan gaji dan penghitungan PPh (Pajak Penghasilan) serta melakukan rekapitulasi kehadiran karyawan. gtEnterprise HR dibangun dengan tujuan agar pengelola perusahaan mengetahui kondisi karyawan dan pada akhirnya dapat mengambil keputusan yang tepat terkait dengan strategi SDM yang akan di terapkan pada perusahaan tersebut.
+Software gtHR dirancang agar dapat mengelola database presensi karyawan, baik yang dilakukan dengan sistem barcode, fingerprint dan smartcard, dan kemudian mengintegrasikannya dengan sistem payroll karyawan. Kerumitan dalam penghitungan gaji dan mengetahui kapan karyawan habis kontrak, dapat diselesaikan dengan aplikasi ini.
 
+*Keuntungan Bisnis*  
+* Siap untuk diintegrasikan dengan smartcard & door access attendance system
+* Layanan mandiri untuk karyawan dan manajemen (cetak slip gaji, pengajuan cuit, update CV, dst).
+* Data Induk Pegawai yang lengkap.
+* Dapat menyimpan data hingga yang bersifat multiple data, seperti data identitas, riwayat pendidikan, nomor telepon, email, rekening bank, hingga asuransi yang diikuti pegawai.  
 
 **Sumber**
 * https://id.howtodou.com/what-is-business-process-as-service-in-cloud-computing
+* https://www.gamatechno.com/products-services-detail/43-corporate-suite/254-gthr-2  
