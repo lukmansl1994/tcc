@@ -1,5 +1,5 @@
 # MINGGU 04  
-# TUGAS PRATIKUM TEGNOLOGI CLOUD BPAAS
+# TUGAS PRATIKUM TEKNOLOGI CLOUD BPAAS
 
 **Definisi BPAAS**  
 Proses Bisnis Sebagai Layanan (BPaaS) adalah jenis proses bisnis horizontal atau vertikal yang disampaikan berdasarkan model layanan awan. Layanan awan ini - yang mencakup Perangkat Lunak sebagai Layanan (SaaS), Platform sebagai Layanan (PaaS), dan Infrastruktur sebagai Layanan (IaaS) - oleh karena itu bergantung pada layanan terkait.
