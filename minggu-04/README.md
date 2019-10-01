@@ -27,6 +27,31 @@ Software gtHR dirancang agar dapat mengelola database presensi karyawan, baik ya
 * Data Induk Pegawai yang lengkap.
 * Dapat menyimpan data hingga yang bersifat multiple data, seperti data identitas, riwayat pendidikan, nomor telepon, email, rekening bank, hingga asuransi yang diikuti pegawai.  
 
+*Features*   
+*Data Pegawai*  
+* Data Personal
+* Suami/Istri
+* Anak
+* Orangtua / Mertua
+* Saudara
+* Mutasi Pegawai
+* Pangkat / Golongan
+* Jabatan / Posisi Kerja
+
+*Payroll Pegawai*  
+* Komponen Gaji
+* Jamsostek
+* THR
+* PPH 21
+* Perhitungan Gaji Karyawan  
+
+*Penilaian Kerja*  
+* Laporan
+* Pegawai
+* Cuti
+* Ijin
+* Lembur
+* Kehadiran.
 **Sumber**
 * https://id.howtodou.com/what-is-business-process-as-service-in-cloud-computing
 * https://www.gamatechno.com/products-services-detail/43-corporate-suite/254-gthr-2  
