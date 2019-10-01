@@ -16,17 +16,7 @@ Dalam beberapa kasus, seluruh proses bisnis perusahaan outsourcing dapat menerap
 * BPaaS harus dapat mendukung banyak bahasa dan beberapa lingkungan penerapan karena bisnis tidak dapat memprediksi bagaimana proses   bisnis akan dimanfaatkan di masa depan.  
 * Lingkungan BPaaS harus bisa menangani skala besar. Layanan harus bisa pergi dari pengelolaan beberapa proses untuk beberapa pelanggan untuk dapat mendukung ratusan bahkan ribuan pelanggan dan proses. Layanan ini mencapai tujuan tersebut dengan mengoptimalkan layanan awan yang mendasari untuk mendukung jenis elastisitas dan penskalaan ini.  
 
-**Kerugian:**  
-* Pengguna tidak memiliki kendali penuh atas aplikasi yang disewa. Pengguna tidak dapat dengan seenaknya mengubah fitur-fitur yang disediakan karena SaaS bersifat multi-tenant sehingga fitur-fitur yang dibuat adalah fitur yang umum (tidak bisa spesifik terhadap kebutuhan pengguna tertentu). Pada beberapa aplikasi, kustomisasi dapat dilakukan dengan skala dan fungsi yang terbatas.
 
-**Contoh SaaS** 
-* Google Doc
-* Google Spreadsheet 
-* Google Presentation
-* Drobox
-
-# **Arsitektur SaaS**  
-![3](image/1.png)  
 
 **Sumber**
 * https://id.howtodou.com/what-is-business-process-as-service-in-cloud-computing
