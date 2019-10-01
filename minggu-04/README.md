@@ -52,6 +52,10 @@ Software gtHR dirancang agar dapat mengelola database presensi karyawan, baik ya
 * Ijin
 * Lembur
 * Kehadiran.
+
+![4](image/1.png) 
+
+
 **Sumber**
 * https://id.howtodou.com/what-is-business-process-as-service-in-cloud-computing
 * https://www.gamatechno.com/products-services-detail/43-corporate-suite/254-gthr-2  
