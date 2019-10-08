@@ -5,7 +5,7 @@
 * Jalankan Docker Quickstart Terminal  
 ![5](images/1.png)  
 -- Jalankan perintah docker pull cockroachdb/cockroach  
- ![5](images/2.png)
+![5](images/2.png)  
 2. Konfigurasi    
 ![2](images/2.png)
 3. Create Databse   
