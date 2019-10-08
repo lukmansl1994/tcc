@@ -7,7 +7,7 @@
 -- Jalankan perintah docker pull cockroachdb/cockroach  
 ![5](images/2.png)  
 2. Konfigurasi    
-![2](images/2.png)
+![2](images/0.png)
 3. Create Databse   
 ![2](images/3.png)  
 4. create Tabel   
