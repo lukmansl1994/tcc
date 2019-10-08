@@ -3,9 +3,9 @@
 
 1. Install cockroach database  
 * Jalankan Docker Quickstart Terminal  
-![5](images/1.png)  
+![5](images/1.PNG)  
 -- Jalankan perintah docker pull cockroachdb/cockroach  
-![5](images/2.png)  
+![5](images/2.PNG)  
 2. Konfigurasi    
 ![2](images/0.png)
 3. Create Databse   
