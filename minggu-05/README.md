@@ -4,17 +4,37 @@
 1. Install cockroach database  
 * Jalankan Docker Quickstart Terminal  
 ![5](images/1.png)  
--- Jalankan perintah docker pull cockroachdb/cockroach  
+* Jalankan perintah docker pull cockroachdb/cockroach  
 ![5](images/2.PNG)  
-2. Konfigurasi    
-![2](images/0.png)
-3. Create Databse   
-![2](images/3.png)  
+2. Konfigurasi 
+* Buat Bridge Network pada docker
+-- docker network create -d bridge roachnet
+![5](images/3.png)
+* Jalankan service cockroachdb 
+-- docker run -d --name=roach1 --hostname=roach1 --net=roachnet -p 26257:26257 -p 8080:8080 cockroachdb/cockroach start --insecure   
+![5](images/4.png)   
+* Cek container, pastikan UP  
+-- docker ps -a  
+![5](images/5.png)  
+* Test Cluster  
+-- docker exec -it roach1 ./cockroach sql --insecure  
+![5](images/6.png)   
+3. Create Databse dengan nama minggulima
+-- create database minggulima; 
+![5](images/7.png)   
+* cek database  
+-- show databases; 
+![5](images/8.png)   
+* menghubugkan databse/mengkonekkan  
+-- use minggulima; 
+![5](images/9.png)   
+
+  
 4. create Tabel   
-![2](images/4.png)  
+  
 5. Merubah lokasi dari branches02 ke branches master  
-![2](images/5.png)
+
 6. Vi Data   
-![2](images/6.png)    
+   
 7. Query Data  
-![2](images/7.png) 
+) 
