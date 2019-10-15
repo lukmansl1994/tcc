@@ -25,16 +25,14 @@
 * cek database  
 -- show databases; 
 ![5](images/8.png)   
-* menghubugkan databse/mengkonekkan  
--- use minggulima; 
-![5](images/9.png)   
-
+* menghubugkan databse/mengkonekkan    
+-- use minggulima;  
+![5](images/9.png)  
+4. create Tabel  
+-- CREATE TABLE minggulima.accounts (id INT PRIMARY KEY, name VARCHAR, balance DECIMAL);
+(yang dimana uuntuk nama tabel accounts di database minggulima)  
+![5](images/10.png)  
   
-4. create Tabel   
-  
-5. Merubah lokasi dari branches02 ke branches master  
-
-6. Vi Data   
-   
-7. Query Data  
-) 
+5. Insert atau memasukan data kedalam tabel  
+-- insert into minggulima.accounts VALUES (1, 'Lukman Surya Laksana', 10000.69);  
+![5](images/11.png)
