@@ -22,9 +22,9 @@
 3. Create Databse dengan nama minggulima
 -- create database minggulima; 
 ![5](images/7.png)   
-* cek database  
--- show databases; 
-![5](images/8.png)   
+* cek database   
+-- show databases;  
+![5](images/8.png)    
 * menghubugkan databse/mengkonekkan    
 -- use minggulima;  
 ![5](images/9.png)  
