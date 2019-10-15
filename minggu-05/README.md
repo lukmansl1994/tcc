@@ -36,3 +36,7 @@
 5. Insert atau memasukan data kedalam tabel  
 -- insert into minggulima.accounts VALUES (1, 'Lukman Surya Laksana', 10000.69);  
 ![5](images/11.png)
+
+6. Menampilkan tabel dan isi tabel  
+-- SELECT * FROM minggulima.accounts;  
+![5](images/12.png)
