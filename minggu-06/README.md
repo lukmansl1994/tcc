@@ -59,7 +59,72 @@ docker run -d -p 80:80 webserver-image:v1
 <pre>
 curl docker
 </pre> 
-![6](images/14.png) 
+![6](images/14.png)  
+
+# Menjalankan Url No.3  
+1. Membuat Dockerfile  
+<pre>
+FROM nginx:1.11-alpine
+</pre>  
+![6](images/15.png)  
+2. Menjalankan Perintah  
+<pre>
+COPY index.html /usr/share/nginx/html/index.html
+</pre>  
+![6](images/16.png)   
+3. Menambahkan port yang dibuka  
+<pre>
+EXPOSE 80
+</pre> 
+![6](images/17.png)  
+4. Menambahkan default commands
+<pre>
+CMD ["nginx", "-g", "daemon off;"]
+</pre>  
+ ![6](images/18.png)  
+5. Membuat image dari Dockerfile  
+<pre>
+docker build -t my-nginx-image:latest .
+</pre>  
+<pre>
+Step 1/4 : FROM nginx:1.11-alpine            
+ ---> bedece1f06cc 
+Step 2/4 : COPY index.html /usr/share/nginx/html/index.html             
+ ---> Using cache        
+ ---> 8cdb0655176d        
+Step 3/4 : EXPOSE 80       
+ ---> Using cache       
+ ---> 0f4a19caeb76         
+Step 4/4 : CMD ["nginx", "-g", "daemon off;"]   
+ ---> Using cache        
+ ---> b1d7e09b4f59         
+Successfully built b1d7e09b4f59    
+Successfully tagged my-nginx-image:latest   
+</pre>
+* Melihat Image yang dibuat tadi  
+<pre>
+docker images
+</pre>  
+![6](images/19.png)  
+6. Menjalankan container dari image yang di buat  
+<pre>
+docker run -d -p 80:80 <image-id|friendly-tag-name>
+</pre>  
+![6](images/20.png)   
+* melihat container yang berjalan
+<pre>
+docker ps
+</pre> 
+* Melihat halaman docker dengan curl  
+<pre>
+curl -i http://docker 
+</pre>  
+![6](images/21.png)  
+
+
+
+
+
 
 
 
