@@ -114,7 +114,8 @@ docker run -d -p 80:80 <image-id|friendly-tag-name>
 * melihat container yang berjalan
 <pre>
 docker ps
-</pre> 
+</pre>  
+![6](images/22.png)  
 * Melihat halaman docker dengan curl  
 <pre>
 curl -i http://docker 
