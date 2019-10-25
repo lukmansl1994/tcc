@@ -42,7 +42,10 @@ V Email confirmed
 -- now  
 ![7](images/4.png) 
  
-
+* Untuk melihat hasil project yang di buat tadi bisa kunjungi Url di bawah ini   
+<pre>
+https://my-next-project.lukmanslgelap.now.sh/
+</pre>
 
 
 
