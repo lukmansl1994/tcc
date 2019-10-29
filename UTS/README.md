@@ -97,7 +97,7 @@ The push refers to repository [docker.io/lukmansl1994/galery]
 PS C:\Users\User>
 </pre>  
 
-11. Silahkan dilihat website hub.docker.com pada link dibawah berikut inihttps://cloud.docker.com/repository/docker/lukmansl1994/galery  
+11. Silahkan dilihat website hub.docker.com pada link dibawah berikut ini https://cloud.docker.com/repository/docker/lukmansl1994/galery  
 ![uts](images/4.png)  
 
 
