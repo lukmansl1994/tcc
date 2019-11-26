@@ -1,0 +1,172 @@
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents
+$ git clone https://github.com/lukmansl1994/tcc.git
+Cloning into 'tcc'...
+remote: Enumerating objects: 251, done.
+remote: Counting objects: 100% (251/251), done.
+remote: Compressing objects: 100% (208/208), done.
+remote: Total 251 (delta 69), reused 212 (delta 30Receivin),g p obajeck-reused c0
+Receiving objects: 100% (251/251), 1.99 MiB | 412.00 KiB/s, done.
+Resolving deltas: 100% (69/69), done.
+Checking connectivity... done.
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents
+$ cd tcc
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/tcc (master)
+$ ls
+minggu-01/  minggu-03/  minggu-05/  minggu-07/  minggu-09/  UTS/
+minggu-02/  minggu-04/  minggu-06/  minggu-08/  README.md
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/tcc (master)
+$ cd ..
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents
+$ git clone https://github.com/lukmansl1994/belajarfork.git
+Cloning into 'belajarfork'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents
+$ cd belajarfork
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ ls
+README.md
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git remote -v
+origin  https://github.com/lukmansl1994/belajarfork.git (fetch)
+origin  https://github.com/lukmansl1994/belajarfork.git (push)
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git remote add upstream https://github.com/najibun/belajarfork.git  //menambah repo upstream yaitu repo yang di fork
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git remote -v // lihat repository yang ada
+origin  https://github.com/lukmansl1994/belajarfork.git (fetch)
+origin  https://github.com/lukmansl1994/belajarfork.git (push)
+upstream        https://github.com/najibun/belajarfork.git (fetch)
+upstream        https://github.com/najibun/belajarfork.git (push)
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git fetch upstream  //update dari upstream ke master
+From https://github.com/najibun/belajarfork
+ * [new branch]      master     -> upstream/master
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git checkout -b lukman  // buat brach baru dengan nama lukman
+Switched to a new branch 'lukman'
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git branch -v  //melihat branch dan yang di commit
+* lukman d022b73 Initial commit
+  master d022b73 Initial commit
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ vim README.md //edit readme
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git add . 
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git commit -m "PuisiMalam"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Student@DESKTOP-B8ACH4F.(none)')
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git config --global user.email "lukmanslgelap@gmail.com"
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git config --global user.email "lukmansuryalaksana"
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git commit -m "PuisiMalam" //
+[lukman 9404856] PuisiMalam
+ 1 file changed, 41 insertions(+)
+ create mode 100644 PuisiMalam.txt
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git checkout master // berpindah ke branch master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ ls -al //melihat isi belajarfork
+total 13
+drwxr-xr-x 1 Student 197121  0 Nov 26 20:50 ./
+drwxr-xr-x 1 Student 197121  0 Nov 26 20:37 ../
+drwxr-xr-x 1 Student 197121  0 Nov 26 20:50 .git/
+-rw-r--r-- 1 Student 197121 38 Nov 26 20:37 README.md
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git checkout lukman //berpindah ke branch lukman
+Switched to branch 'lukman'
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git push origin lukman 
+Fatal: AggregateException encountered.
+Username for 'https://github.com': lukmansl1994
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 638 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'lukman' on GitHub by visiting:
+remote:      https://github.com/lukmansl1994/belajarfork/pull/new/lukman
+remote:
+To https://github.com/lukmansl1994/belajarfork.git
+ * [new branch]      lukman -> lukman
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (lukman)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git checkout master
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git branch // lihat branch yang di pakai, kalau ada tanda * maka itu yg di pakai
+  lukman
+* master
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git fetch upstream // ambil dari repo upstream
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 0), reused 4 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/najibun/belajarfork
+   d022b73..9fbe04a  master     -> upstream/master
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$ git merge upstream/master // menggabungkan upstream dan master
+Updating d022b73..9fbe04a
+Fast-forward
+ PuisiMalam.txt | 41 +++++++++++++++++++++++++++++++++++++++++
+ README.md      |  1 +
+ pantun.txt     |  7 +++++++
+ 3 files changed, 49 insertions(+)
+ create mode 100644 PuisiMalam.txt
+ create mode 100644 pantun.txt
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/belajarfork (master)
+$
