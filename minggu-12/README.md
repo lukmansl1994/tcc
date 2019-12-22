@@ -25,7 +25,7 @@ services:
   drupal:
     image: drupal:latest
     ports:
-      - 80:80
+      - 9090:80
     volumes:
       - drupal_modules:/var/www/html/modules
       - drupal_profiles:/var/www/html/profiles
@@ -105,8 +105,21 @@ Creating mydrupal_postgres_1
 Creating mydrupal_postgres_1 ... done
 </pre>  
 * -d artinya di jalankan di belakang background  
-6. 
 
+6. Untuk tesnya ketikkan 192.168.99.100:9090 (ini memakau ip virtualbox)  
+![12](images/1.png) 
+
+7. Install drupal  
+- Isikan username dan password database  
+![12](images/2.png)  
+- Proses insatallasi Drupal  
+![12](images/3.png) 
+
+8. Isi konfigurasi untuk login ke situs  
+![12](images/4.png) 
+
+10. Hasil atau browsing ketikan 192.168.99.100:9090  
+![12](images/5.png)  
 
 
 
