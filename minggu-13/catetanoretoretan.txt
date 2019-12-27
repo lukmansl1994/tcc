@@ -1,0 +1,69 @@
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-13 (master)
+$ docker-machine ssh mesin2
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@mesin2:~$ exit
+logout
+
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-13 (master)
+$ docker swarm join --token SWMTKN-1-1wf4nnd2h1avas2c9wyoplkesnlhcdyq5lattcro5k
+f11cwca0-9azwbe8ceh8nhjunlmxl9j0cs 192.168.99.101:2377
+Error response from daemon: This node is already part of a swarm. Use "docker sw
+arm leave" to leave this swarm and join another one.
+
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-13 (master)
+$ docker-machine ssh mesin2
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+< SWMTKN-1-1wf4nnd2h1avas2c9wyoplkesnlhcdyq5lattcro5
+< SWMTKN-1-1wf4nnd2h1avas2c9wyoplkesnlhcdyq5lattcro5
+docker@mesin2:~$                           5lattcro5
+docker@mesin2:~$
+<rm join --token SWMTKN-1-1wf4nnd2h1avas2c9wyoplkesn
+docker@mesin2:~$ unlmxl9j0cs 192.168.99.101:2377
+This node joined a swarm as a worker.
+docker@mesin2:~$ exit         cs 192.168.99.101:2377
+logout
+
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-13 (master)
+$ docker-machine ssh mesin1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@mesin1:~$ docker node ls
+ID                            HOSTNAME            STATUS              AVAILABILI
+TY        MANAGER STATUS      ENGINE VERSION
+nccmiaic4504s0bvbjkce627t     default             Ready               Active
+                              19.03.5
+6r0evh46xmptdn0vuxr4utrnn *   mesin1              Ready               Active
+          Leader              19.03.5
+eft0gxotbqa418tc50ohcsq0z     mesin2              Ready               Active
+                              19.03.5
+docker@mesin1:~$ exit
+logout
+
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-13 (master)
+$ docker swarm leave
+Node left the swarm.
+
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-13 (master)
+$ docker-machine ssh mesin1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@mesin1:~$ docker node ls
+ID                            HOSTNAME            STATUS              AVAILABILI
+TY        MANAGER STATUS      ENGINE VERSION
+nccmiaic4504s0bvbjkce627t     default             Down                Active
+                              19.03.5
+6r0evh46xmptdn0vuxr4utrnn *   mesin1              Ready               Active
+          Leader              19.03.5
+eft0gxotbqa418tc50ohcsq0z     mesin2              Ready               Active
+                              19.03.5
+docker@mesin1:~$

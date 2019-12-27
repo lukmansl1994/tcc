@@ -217,12 +217,76 @@ $ docker-machine ssh mesin1
 docker@mesin1:~$ docker node ls
 ID                            HOSTNAME            STATUS              AVAILABILI
 TY        MANAGER STATUS      ENGINE VERSION
-nccmiaic4504s0bvbjkce627t     default             Ready               Active
+nccmiaic4504s0bvbjkce627t     default             Down                Active
                               19.03.5
 6r0evh46xmptdn0vuxr4utrnn *   mesin1              Ready               Active
           Leader              19.03.5
-docker@mesin1:~$
+eft0gxotbqa418tc50ohcsq0z     mesin2              Ready               Active
+                              19.03.5
 </pre>  
+
+# Tambahan
+1. Menonaktifkan mesin  masuk ke mesin terlebih dahulu kemudian jalankan perintah `docker swarm leave --force` 
+<pre>
+docker@mesin2:~$ docker swarm leave  --force
+Node left the swarm.
+</pre>  
+2. Cek `docker info`  
+<pre>
+docker@mesin2:~$ docker info
+Client:
+ Debug Mode: false
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 19.03.5
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk s
+yslog
+ Swarm: inactive
+ Runtimes: runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b34a5c8af56e510852c35414db4c1f4fa6172339
+ runc version: 3e425f80a8c931f88e6d94a8c831b9d5aa481657
+ init version: fec3683
+ Security Options:
+  seccomp
+   Profile: default
+ Kernel Version: 4.14.154-boot2docker
+ Operating System: Boot2Docker 19.03.5 (TCL 10.1)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 1
+ Total Memory: 989.5MiB
+ Name: mesin2
+ ID: 7OTV:TJQM:H5MI:2XP7:SXWI:E72G:XZX5:QFG7:B3PL:R4RM:VGTX:ANSD
+ Docker Root Dir: /mnt/sda1/var/lib/docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+  provider=virtualbox
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Product License: Community Engine
+
+docker@mesin2:~$
+</pre>
+4. untuk mematikan status `docker swarm leave`  
 
 
 
