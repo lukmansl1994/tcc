@@ -48,8 +48,52 @@ ENV STATIC_URL /static
 ENV STATIC_PATH /var/www/app/static
 COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
+</pre> 
+2. Build images docker with command `docker build -t lukmansl/python-flask:v1 .`  
+<pre>
+$ docker build -t lukmansl/python-flask:v1 .
+Sending build context to Docker daemon  19.97kB
+Step 1/6 : FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
+ ---> c902fcf59a97
+Step 2/6 : RUN apk --update add bash nano
+ ---> Using cache
+ ---> b77a13c1c4c8
+Step 3/6 : ENV STATIC_URL /static
+ ---> Using cache
+ ---> 768682fac3ef
+Step 4/6 : ENV STATIC_PATH /var/www/app/static
+ ---> Using cache
+ ---> e44af29b3079
+Step 5/6 : COPY ./requirements.txt /var/www/requirements.txt
+ ---> Using cache
+ ---> 7c6decb581f8
+Step 6/6 : RUN pip install -r /var/www/requirements.txt
+ ---> Using cache
+ ---> 37c59c1d3ea1
+Successfully built 37c59c1d3ea1
+Successfully tagged lukmansl/python-flask:v1
+SECURITY WARNING: You are building a Docker image from Windows against a non-Win
+dows Docker host. All files and directories added to build context will have '-r
+wxr-xr-x' permissions. It is recommended to double check and reset permissions f
+or sensitive files and directories.
+</pre> 
+3. Cek image dengan perintah `docker images`  
+<pre>
+$ docker images
+REPOSITORY                   TAG                   IMAGE ID            CREATED
+           SIZE
+docker.test                  latest                37c59c1d3ea1        11 minute
+s ago      199MB
+lukmansl/python-flask        v1                    37c59c1d3ea1        11 minute
+s ago      199MB
+drupal                       latest                115c57355190        3 weeks a
+go         449MB
+postgres                     10                    1ba73c5b23e7        3 weeks a
+go         250MB
+tiangolo/uwsgi-nginx-flask   python3.6-alpine3.7   c902fcf59a97        2 months
+ago        189MB
 </pre>  
-2. jalankan perintah start.sh yang digunakan untuk menjalankan scrip docker build dan kemudian di run  
+4. jalankan perintah start.sh yang digunakan untuk menjalankan scrip docker build dan kemudian di run  
 <pre>
 $ ./start.sh
 Sending build context to Docker daemon  14.34kB
@@ -124,7 +168,7 @@ Successfully tagged docker.test:latest
 SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
 3bfdda2dd3b365ca3e3df0e52c0ade80e8153dde632c3fcb475332ab507ba286
 </pre>  
-3. jalankan perintah docker ps digunakan untuk melihat container yang berjalan  
+5. jalankan perintah docker ps digunakan untuk melihat container yang berjalan  
 <pre>
 Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
 $ docker ps
