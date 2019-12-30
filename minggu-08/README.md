@@ -49,9 +49,9 @@ ENV STATIC_PATH /var/www/app/static
 COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
 </pre> 
-2. Build images docker with command `docker build -t lukmansl/python-flask:v1 .`  
+2. Build images docker with command `docker build -t lukmansl1994/python-flask:v1 .`  
 <pre>
-$ docker build -t lukmansl/python-flask:v1 .
+$ docker build -t lukmansl1994/python-flask:v1 .
 Sending build context to Docker daemon  19.97kB
 Step 1/6 : FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
  ---> c902fcf59a97
