@@ -172,8 +172,8 @@ SECURITY WARNING: You are building a Docker image from Windows against a non-Win
 <pre>
 Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
 $ docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                            NAMES
-3bfdda2dd3b3        docker.test         "/entrypoint.sh /s..."   31 seconds ago      Up 31 seconds       443/tcp, 0.0.0.0:56733->80/tcp   docker.test
+CONTAINER ID        IMAGE                          COMMAND                  CREATED             STATUS              PORTS                           NAMES
+4687d1ec8264        lukmansl1994/python-flask:v1   "/entrypoint.sh /sta…"   2 minutes ago       Up 2 minutes        443/tcp, 0.0.0.0:5000->80/tcp   python-flask
 </pre>
 
 
