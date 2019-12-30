@@ -47,24 +47,21 @@ lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
 </pre>  
 3. Cek image di docker hub.     
 ![9](images/1.png)  
-6. Menjalankan image menjadi container  `docker run -d -p 5000:5000 --name=python-flask lukmansl1994/python-flask:v1`  
+6. Menjalankan image menjadi container  `docker run -d -p 5000:80 --name=python-flask lukmansl1994/python-flask:v1` (windows --> virtualbox (port 5000)--> container flask (port 80))  
 <pre>
 lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
-$ docker run -d -p 5000:5000 --name=python-flask lukmansl1994/python-flask:v1
+$ docker run -d -p 5000:80 --name=python-flask lukmansl1994/python-flask:v1
 646d65b23cb357339f43b3546e8c3d038187cb47fc04734b08dba845733ffd35
 </pre>  
 7. Cek Container yang sedang berjalan `docker ps`  
 <pre>
 lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
 $ docker ps
-CONTAINER ID        IMAGE                          COMMAND                  CREA
-TED             STATUS              PORTS                                     NA
-MES
-646d65b23cb3        lukmansl1994/python-flask:v1   "/entrypoint.sh /sta"   9 sec
-onds ago       Up 8 seconds        80/tcp, 443/tcp, 0.0.0.0:5000->5000/tcp   pyt
-hon-flask
+CONTAINER ID        IMAGE                          COMMAND                  CREATED             STATUS              PORTS                           NAMES
+4687d1ec8264        lukmansl1994/python-flask:v1   "/entrypoint.sh /sta…"   2 minutes ago       Up 2 minutes        443/tcp, 0.0.0.0:5000->80/tcp   python-flask
 </pre>  
-8. Cek di browser dengan akses ``  
+8. Cek di browser dengan akses `http://192.168.99.100:5000/`  
+![9](images/2.png)  
 
 
 
