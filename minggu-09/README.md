@@ -2,19 +2,69 @@
 # MELANJUTKAN MINGGU 08   
 # PYTHON FT. FLASK 
 
-1. Login GitHub.  
-2. Masuk ke repo yang ingin kita fork `https://github.comshafirakp/tcc-1.git.`  
-3. Klik tombol fork.  
-4. Setelah klik fork, maka button fork akan ke disable.  
-![9](images/1.png)  
-5. Clone repo yang sudah kita fork menggunakan perintah `git clone https://github.com/lukmansl1994/tcc-1.git`  
-![9](images/2.png)  
-6. lihat track repository dengan perintah `git remote -v`  <pre>
-</pre>  
-7. Membuat konfigurasi repo upstream.  
+1. login ke Docker `docker login`  
 <pre>
+$ docker login
+Authenticating with existing credentials...
+WARNING! Your password will be stored unencrypted in C:\Users\lukmanPC\.docker\c
+onfig.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
 </pre>  
-8. 
+2. Push image ke Docker Hub  `docker push lukmansl1994/python-flask:v1`  
+<pre>
+$ docker push lukmansl1994/python-flask:v1
+The push refers to repository [docker.io/lukmansl1994/python-flask]
+201878cc5b39: Layer already exists
+6491bf786178: Layer already exists
+03e27abc14cd: Layer already exists
+9e1997504a36: Layer already exists
+afafdd57788e: Layer already exists
+88ffe55f8636: Layer already exists
+9645f48ac45f: Layer already exists
+e1c78b268584: Layer already exists
+0a20307a8580: Layer already exists
+f9b3c92a17fa: Layer already exists
+8e419e3a6eff: Layer already exists
+9f9824dded62: Layer already exists
+4be28133a48e: Layer already exists
+44baabe6f6aa: Layer already exists
+848ed578d6a7: Layer already exists
+06ff6945efba: Layer already exists
+c7831e67c104: Layer already exists
+4e981b96f251: Layer already exists
+b15402eeb9fb: Layer already exists
+9c2123bd22f4: Layer already exists
+a11e869e648d: Layer already exists
+50f8b07e9421: Layer already exists
+629164d914fc: Layer already exists
+v1: digest: sha256:eb1fcee937603bd13b8775001fed8f35f5ecf6dd3dddc44d9be291f677d2d
+b18 size: 5123
+
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
+</pre>  
+3. Cek image di docker hub.     
+![9](images/1.png)  
+6. Menjalankan image menjadi container  `docker run -d -p 5000:5000 --name=python-flask lukmansl1994/python-flask:v1`  
+<pre>
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
+$ docker run -d -p 5000:5000 --name=python-flask lukmansl1994/python-flask:v1
+646d65b23cb357339f43b3546e8c3d038187cb47fc04734b08dba845733ffd35
+</pre>  
+7. Cek Container yang sedang berjalan `docker ps`  
+<pre>
+lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
+$ docker ps
+CONTAINER ID        IMAGE                          COMMAND                  CREA
+TED             STATUS              PORTS                                     NA
+MES
+646d65b23cb3        lukmansl1994/python-flask:v1   "/entrypoint.sh /sta"   9 sec
+onds ago       Up 8 seconds        80/tcp, 443/tcp, 0.0.0.0:5000->5000/tcp   pyt
+hon-flask
+</pre>  
+8. Cek di browser dengan akses ``  
 
 
 
