@@ -1,4 +1,4 @@
-# MINGGU 05  
+# MINGGU 02  
 
 1. Install cockroach database  
 * Jalankan Docker Quickstart Terminal
